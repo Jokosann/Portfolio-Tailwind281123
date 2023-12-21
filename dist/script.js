@@ -1,7 +1,16 @@
+// import { clearConfigCache } from "prettier";
+
 // hamberger
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 const navlink = document.querySelectorAll("#nav-menu li");
+const html = document.querySelector("html");
+const toggleCheck = document.querySelector("#dark-toggle");
+
+toggleCheck.addEventListener("click", function () {
+	toggleCheck.checked ? html.classList.add("dark") : html.classList.remove("dark");
+});
+
 hamburger.addEventListener("click", function () {
 	hamburger.classList.toggle("hamburger-active");
 	navMenu.classList.toggle("nav-active");
