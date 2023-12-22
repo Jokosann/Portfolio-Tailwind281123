@@ -44,13 +44,11 @@ hamburger.addEventListener("click", function () {
 
 // close nav jika click mana saja kecuali hamburger & navLInk
 document.addEventListener("click", function (e) {
-	if (e.target != hamburger && e.target != navlink) {
+	if (!hamburger.contains(e.target)) {
 		hamburger.classList.remove("hamburger-active");
 		navMenu.classList.remove("nav-active");
-		navlink.forEach((link, index) => {
+		navlink.forEach((link) => {
 			if (link.style.animation) {
-				link.style.animation = "";
-			} else {
 				link.style.animation = "";
 			}
 		});
