@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +11,9 @@
 		<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
 			<div class="container">
 				<!-- start  -->
-				<div class="flex items-center justify-between relative">
+				<div class="flex items-center lg:justify-between relative">
 					<!-- logo -->
-					<div class="px-4">
+					<div class="px-4 lg:mr-0">
 						<a href="#home" class="block py-3">
 							<img src="./dist/img/logo.png" alt="logo" />
 						</a>
@@ -26,7 +26,7 @@
 							id="hamburger"
 							type="button"
 							name="hamburger"
-							class="block absolute right-4 lg:hidden"
+							class="block absolute z-50 right-4 lg:hidden bg-transparent"
 						>
 							<span
 								class="hamburger-menu dark:bg-white transition duration-300 ease-in-out origin-top-left"
@@ -89,32 +89,32 @@
 								</li>
 							</ul>
 						</nav>
+					</div>
 
-						<!-- toggle dark mode -->
-						<div
-							class="bg-white dark:bg-gray-900 justify-center w-[160px] lg:w-[120px] h-[50px] pr-4 flex flex-row items-center"
-						>
-							<div class="flex flex-row justify-between toggle">
-								<label for="dark-toggle" class="flex items-center cursor-pointer">
-									<div class="relative">
-										<input
-											type="checkbox"
-											name="dark-mode"
-											id="dark-toggle"
-											class="checkbox hidden"
-										/>
-										<div
-											class="block border-[1px] dark:border-white border-gray-900 w-[42px] h-6 rounded-full"
-										></div>
-										<div
-											class="dot absolute left-[3px] top-[3px] dark:bg-white bg-gray-800 w-[18px] h-[18px] rounded-full transition"
-										></div>
-									</div>
-									<div class="ml-2 dark:text-white text-gray-900 font-medium">
-										<img class="w-[35px] h-auto" src="./dist/img/dark.png" alt="dark" />
-									</div>
-								</label>
-							</div>
+					<!-- toggle dark mode -->
+					<div
+						class="flex flex-row items-center bg-transparent lg:relative lg:right-9 lg:justify-end absolute right-16 dark:bg-transparent justify-end w-[120px] lg:w-[120px] h-[50px]"
+					>
+						<div class="flex flex-row justify-between toggle">
+							<label for="dark-toggle" class="flex items-center cursor-pointer">
+								<div class="relative" id="toggle-dark">
+									<input
+										type="checkbox"
+										name="dark-mode"
+										id="dark-toggle"
+										class="checkbox hidden"
+									/>
+									<div
+										class="block border-[1px] dark:border-white border-gray-900 w-[42px] h-6 rounded-full"
+									></div>
+									<div
+										class="dot absolute left-[3px] top-[3px] dark:bg-white bg-gray-800 w-[18px] h-[18px] rounded-full transition"
+									></div>
+								</div>
+								<div class="ml-2 dark:text-white text-gray-900 font-medium">
+									<img class="w-[35px] h-auto" src="./dist/img/dark.png" alt="dark" />
+								</div>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,8 @@
 							fugit quas nesciunt aliquam?
 						</p>
 						<a
-							href=""
+							href="#about"
+							id="to-about"
 							class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
 							>Get Started 👇</a
 						>
@@ -198,7 +199,7 @@
 						<div class="flex items-center">
 							<!-- instagram -->
 							<a
-								href=""
+								href="https://www.instagram.com/jokosannn_/"
 								target="_blank"
 								class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 							>
@@ -218,7 +219,7 @@
 
 							<!-- github -->
 							<a
-								href=""
+								href="https://github.com/Jokosann/"
 								target="_blank"
 								class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 							>
@@ -238,7 +239,7 @@
 
 							<!-- facebook -->
 							<a
-								href=""
+								href="https://web.facebook.com/profile.php?id=100013956765280"
 								target="_blank"
 								class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 							>
@@ -258,7 +259,7 @@
 
 							<!-- x / twitter -->
 							<a
-								href=""
+								href="https://twitter.com/san71824321"
 								target="_blank"
 								class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 							>
@@ -671,7 +672,7 @@
 					<div class="flex items-center justify-center mb-5">
 						<!-- instagram -->
 						<a
-							href=""
+							href="https://www.instagram.com/jokosannn_/"
 							target="_blank"
 							class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 						>
@@ -691,7 +692,7 @@
 
 						<!-- github -->
 						<a
-							href=""
+							href="https://github.com/Jokosann"
 							target="_blank"
 							class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 						>
@@ -711,7 +712,7 @@
 
 						<!-- facebook -->
 						<a
-							href=""
+							href="https://web.facebook.com/profile.php?id=100013956765280"
 							target="_blank"
 							class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 						>
@@ -731,7 +732,7 @@
 
 						<!-- x/twitter -->
 						<a
-							href=""
+							href="https://twitter.com/san71824321"
 							target="_blank"
 							class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
 						>
@@ -769,7 +770,7 @@
 		<a
 			href="#home"
 			id="to-top"
-			class="h-14 w-14 bg-primary p-4 rounded-full fixed z-[999] bottom-4 right-4 hover:opacity-90 hidden"
+			class="h-14 w-14 bg-primary p-4 rounded-full fixed z-[999] bottom-8 right-6 hover:opacity-90 hidden"
 		>
 			<img src="./dist/img/top.png" alt="top" />
 		</a>
