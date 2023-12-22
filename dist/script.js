@@ -4,42 +4,15 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 const navlink = document.querySelectorAll("#nav-menu li");
-const navlinkA = document.querySelectorAll("#nav-menu li a");
 const html = document.querySelector("html");
 const toggleDark = document.getElementById("toggle-dark");
-const toTop = document.getElementById("to-top");
-const toAbout = document.getElementById("to-about");
+const links = document.querySelectorAll('a[href^="#"]');
 
-// scroll behavior to about // get startted👇
-toAbout.addEventListener("click", function (event) {
-	event.preventDefault();
-	const targetIdAbout = this.getAttribute("href");
-	const targetElementAbout = document.querySelector(targetIdAbout);
-	if (targetElementAbout) {
-		targetElementAbout.scrollIntoView({
-			behavior: "smooth",
-		});
-	}
-});
-
-// scroll behavior back to top
-toTop.addEventListener("click", function (event) {
-	event.preventDefault();
-	const targetIdHome = this.getAttribute("href");
-	const targetElementHome = document.querySelector(targetIdHome);
-	if (targetElementHome) {
-		targetElementHome.scrollIntoView({
-			behavior: "smooth",
-		});
-	}
-});
-
-// s scroll behavior disetiap nav link
-navlinkA.forEach((link) => {
+// secroll behavior in every link
+links.forEach((link) => {
 	link.addEventListener("click", function (e) {
 		e.preventDefault();
 		const targetId = this.getAttribute("href");
-		console.log(targetId);
 		const targetElement = document.querySelector(targetId);
 		if (targetElement) {
 			targetElement.scrollIntoView({
