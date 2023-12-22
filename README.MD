@@ -1,20 +1,18 @@
 # Personal Portofolio
 
-A brief description of what this project does and I used modern Html, Css, and Javascript to create an website personal portfolio.
+A brief description of what this project does and I used modern Html, TailwindCSS, and Javascript to create an website personal portfolio.
 
 ## Srceenshot
 
 Here we have project screenshot:
 
-![screenshot](dist/img/screenshot/01.png)
+![screenshot](dist/img/screenshot/03.png)
 
-![screenshot](dist/img/screenshot/02.png)
+![screenshot](dist/img/screenshot/03-dark.png)
 
 ## Tech Stack
 
-- Html
-- Css
-- javascript
+**Client:** Html, TailwindCSS, Javascript
 
 ## Authors
 
