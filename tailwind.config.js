@@ -1,45 +1,48 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	darkMode: "class",
-	content: ["index.html"],
+	darkMode: 'class',
+	content: ['index.html'],
 	theme: {
 		container: {
 			center: true,
-			padding: "16px",
+			padding: '16px',
 		},
 		extend: {
+			backgroundImage: {
+				'hero-pattern': "url('./dist/img/portfolio/webmovie.png')",
+			},
 			keyframes: {
 				navFade: {
 					from: {
-						opacity: "0",
-						transform: "translateX(50px)",
+						opacity: '0',
+						transform: 'translateX(50px)',
 					},
 					to: {
-						opacity: "1",
-						transform: "translateX(0px)",
+						opacity: '1',
+						transform: 'translateX(0px)',
 					},
 				},
 				navFadeLg: {
 					from: {
-						opacity: "0",
-						transform: "translateX(10px)",
+						opacity: '0',
+						transform: 'translateX(10px)',
 					},
 					to: {
-						opacity: "1",
-						transform: "translateX(0px)",
+						opacity: '1',
+						transform: 'translateX(0px)',
 					},
 				},
 			},
 			animation: {
-				navFadeLg: "navFadeLg 300ms forwards running",
+				navFadeLg: 'navFadeLg 300ms forwards running',
 			},
 			colors: {
-				primary: "#6366f1",
-				secondary: "#64748b",
-				dark: "#0f172a",
+				primary: '#6366f1',
+				secondary: '#64748b',
+				dark: '#0f172a',
 			},
 			screens: {
-				"2xl": "1320px",
+				'2xl': '1320px',
 			},
 		},
 	},

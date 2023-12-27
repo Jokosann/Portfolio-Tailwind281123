@@ -6,9 +6,9 @@ A brief description of what this project does and I used modern Html, TailwindCS
 
 Here we have project screenshot:
 
-![screenshot](dist/img/screenshot/03.png)
+![screenshot](dist/img/screenshot/04.png)
 
-![screenshot](dist/img/screenshot/03-dark.png)
+![screenshot](dist/img/screenshot/04-dark.png)
 
 ## Tech Stack
 
@@ -16,8 +16,10 @@ Here we have project screenshot:
 
 ## Authors
 
-- [@Jokosann](https://www.github.com/Jokosann)
+[@jokosann](https://www.github.com/Jokosann)
 
 ## Date Created
 
 28 November 2023
+
+**Happy Coding!** 🚀
